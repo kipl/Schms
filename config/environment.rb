@@ -8,7 +8,7 @@ Rails::Initializer.run do |config|
 
   config.gem 'declarative_authorization', :source => 'http://gemcutter.org'
   config.gem 'searchlogic'
-  config.gem 'prawn', :version=> '0.6.3'
+  config.gem 'prawn'
 
   config.load_once_paths += %W( #{RAILS_ROOT}/lib )
   config.load_paths += Dir["#{RAILS_ROOT}/app/models/*"].find_all { |f| File.stat(f).directory? }
